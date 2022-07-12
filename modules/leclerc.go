@@ -32,6 +32,8 @@ func (s *LeclercSession) InitSession(product string) {
 /** Adding To Cart */
 func (s *LeclercSession) AddToCart() error {
 
+	/** Payload for ATC */
+	// Note : Les données sont en brutes et pourrait être dynamique en fonction du lien
 	values := []map[string]interface{}{
 		{
 			"offerId":                  "2294206",
@@ -48,6 +50,7 @@ func (s *LeclercSession) AddToCart() error {
 	}
 
 	payloadBytes, _ := json.Marshal(values)
+
 	req, _ := http.NewRequest("POST", "https://www.e.leclerc/api/rest/oms-order-api/cart/compute-local-cart-from-offers", bytes.NewReader(payloadBytes))
 	req.Header.Set("authority", "www.e.leclerc")
 	req.Header.Set("method", "POST")
@@ -65,6 +68,7 @@ func (s *LeclercSession) AddToCart() error {
 	req.Header.Set("sec-fetch-mode", "cors")
 	req.Header.Set("sec-fetch-site", "same-origin")
 	req.Header.Set("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36")
+	// Send Request
 	resp, err := s.Client.Do(req)
 	if err != nil {
 		return err
@@ -72,8 +76,18 @@ func (s *LeclercSession) AddToCart() error {
 	ioutil.ReadAll(resp.Body)
 	defer resp.Body.Close()
 	switch resp.StatusCode {
+	// Success return null
 	case 201:
 		return nil
+
+	case 404:
+		return errors.New("404")
 	}
-	return errors.New("Error")
+
+	return errors.New("Error_Untype")
+}
+
+/** Login Account */
+func (s *LeclercSession) Login() error {
+	return errors.New("Error_Untype")
 }

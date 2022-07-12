@@ -1,0 +1,11 @@
+Nombre d'heures pour cet exercice : 1h30 (environ)
+Le ATC est fonctionnnel même si je pense que je peux faire largement mieux, mais avec plus de temps.
+Le code est relativement simple mais assez compréhensible.
+Pour ce qui concerne les logiciels utilisés, j'ai utilisé Chrome pour simuler l'ATC et visualiser la requête.
+Ensuite, j'ai tester la requête avec POSTMAN pour vérifier le fonctionnement.
+Puis pour finir, j'ai transcris cette requête via GoLang.
+Comme je l'ai inscrit tout n'est pas parfait car ce n'est pas un langage que j'ai habitude d'utilisé mais mon travail me semble correct.
+Pour ce qui concerne mon environnement de travail, j'ai utilisé Visual Studio Code et un PC portable sous Mac OS car je ne suis pas chez moi actuellement.
+
+En ce qui concerne le test, je l'ai trouvé pertinent et je pense que c'est un très bon test même pour s'entrainer et apprendre le fonctionnement des requêtes.
+Même si la réponse n'est pas favorable en ma faveur, je suis content d'avoir pu faire cet exercice avec Golang.

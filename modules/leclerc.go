@@ -88,6 +88,6 @@ func (s *LeclercSession) AddToCart() error {
 }
 
 /** Login Account */
-func (s *LeclercSession) Login() error {
+func (s *LeclercSession) LoginAccount() error {
 	return errors.New("Error_Untype")
 }

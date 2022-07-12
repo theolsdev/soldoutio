@@ -9,3 +9,6 @@ Pour ce qui concerne mon environnement de travail, j'ai utilisé Visual Studio C
 
 En ce qui concerne le test, je l'ai trouvé pertinent et je pense que c'est un très bon test même pour s'entrainer et apprendre le fonctionnement des requêtes.
 Même si la réponse n'est pas favorable en ma faveur, je suis content d'avoir pu faire cet exercice avec Golang.
+
+//
+J'ai ajouté un dossier js, avec le même script en JS, évidemment ce n'est pas très complet mais si ça peut me démarquer et montrer quelques compétences en plus, je l'ai fait.

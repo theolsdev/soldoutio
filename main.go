@@ -21,6 +21,7 @@ func main() {
 
 		s := modules.LeclercSession{}
 
+		// Note : Normalement c'est la variable product ici mais étant donnée que ce n'est pas dynamique j'ai laissé le lien directement
 		s.InitSession("https://www.e.leclerc/fp/bottines-en-cuir-a-lacet-outdor-7640305958908")
 		for {
 			fmt.Println("Adding to cart...")

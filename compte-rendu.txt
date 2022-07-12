@@ -13,4 +13,3 @@ Même si la réponse n'est pas favorable en ma faveur, je suis content d'avoir p
 //
 J'ai ajouté un dossier js, avec le même script en JS, évidemment ce n'est pas très complet mais si ça peut me démarquer et montrer quelques compétences en plus, je l'ai fait.
 PS: Je n'ai pas testé le script JS (mais je suis sûr qu'il fonctionne)
-Encore une fois, je suis capable de mieux..
